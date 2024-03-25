@@ -1,7 +1,8 @@
 use std::time::Instant;
 
-use crate::util::read_file_line_by_line_better;
 use clap::Parser;
+
+use crate::util::read_file_line_by_line_better;
 
 mod util;
 /// Search for a pattern in a file and display the lines that contain it.
@@ -21,7 +22,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // read_file_as_string(&args)?;
     read_file_line_by_line_better(&args);
 
-    // let filename = "random_string.txt";
+    // let filename = "random_text.txt";
     // let lines = 1000;
     //
     // // Create the random string file
